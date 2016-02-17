@@ -1,0 +1,41 @@
+<!--Common header-->
+<%- include partials/header.ejs %>
+<main role="main">
+    <!--Title-->
+    <h1><%= title %></h1>
+    <div class="row">
+        <!--Contact information-->
+        <div class="contactme well panel panel-default">
+            <h2 class="panel-heading">Want to Work with Sunghie?</h2>
+            <p class="panel-body">If you have any questions about me or my services,
+                please don’t hesitate to contact by phone or email. I will be very happy to answer your questions.</p>
+            <!--Contact images-->
+            <div class="contact">
+                <span class="well"><img src="../images/icons/phone.png" alt="Phone">705 500 2194</span>
+                <span class="well"><img src="../images/icons/email.png" alt="Email">lsh9907@hotmail.com</span>
+            </div>
+        </div>
+    </div>
+    <!--User's message-->
+    <h1>Message</h1>
+    <div class="row message">
+        <!--Message form-->
+        <form name="messageform" action="/send" method="post" enctype="multipart/form-data" class="form-horizontal well">
+            <div class="form-group form-inline">
+                <label for="name">Name: </label>
+                <input id="name" name="name" placeholder="Ex)Sunghie Lee" class="form-control">
+            </div>
+            <div class="form-group form-inline">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Ex lsh9907@hotmail.com" class="form-control">
+            </div>
+            <div class="form-group form-inline">
+                <label for="message">Message: </label>
+                <textarea cols="50" rows="5" id="message" name="message" placeholder="Leave your message" class="form-control"></textarea>
+            </div>
+            <span id="button"><button type="submit" class="btn btn-info btn-lg">Submit</button></span>
+        </form>
+    </div>
+</main>
+<!--Common footer-->
+<%- include partials/footer.ejs %>

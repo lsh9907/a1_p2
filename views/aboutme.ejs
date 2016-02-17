@@ -1,0 +1,29 @@
+<!--Common header-->
+<%- include partials/header.ejs %>
+<main role="main">
+    <!--Title-->
+    <h1><%= title %></h1>
+    <!--Profile with photo and greeting-->
+    <div class="row">
+        <div class="image well col-lg-3">
+            <img src="../images/sunghie.jpg" id="sunghie" title="Sunghie Lee" alt="Sunghie Lee">
+        </div>
+        <div class="profile well col-lg-8">
+            <p>Prepared college student to learn, and immediately take advantage of various new academic skills with creative ideas.
+                Always dedicated to the employer, working within a team, or independently as valued employee. Will be highly responsible for keeping time, doing best for assigned tasks, and making endless attempts for the better Web Design and Development industry.
+            </p>
+            <span><strong>Sunghie Lee</strong></span>
+        </div>
+    </div>
+    <!--Skills indicated with images-->
+    <h1>Skills</h1>
+    <div class="skills well row clearfix">
+        <img src="../images/skills/htmlcssjs.png" id="htmlcssjs" alt="HTML/CSS/JavaScript">
+        <div>
+            <img src="../images/skills/psillid.png" id="psillid" alt="Photoshop/Illustrator">
+            <img src="../images/skills/phpmysql.png" id="phpmysql" alt="PHP/MySQL">
+        </div>
+    </div>
+</main>
+<!--Common footer-->
+<%- include partials/footer.ejs %>

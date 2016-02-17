@@ -1,0 +1,29 @@
+<!--Common header-->
+<%- include partials/header.ejs %>
+<main role="main">
+    <!--Title-->
+    <h1><%= title %></h1>
+    <!--Services images-->
+    <div class="servicesimg row">
+        <img src="../images/icons/website.png" alt="Website">
+        <img src="../images/icons/mobile.png" alt="Mobile Application">
+    </div>
+    <div class="row">
+        <!--Details of services indicated in a list-->
+        <div class="services panel panel-default">
+            <div class="panel-heading"><strong>How is Sunghie's service like?</strong></div>
+            <div class="panel-body">
+                <p>Every type of websites or mobile applications is built through the following procedures.
+                </p>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">Structure (HTML / PHP / Node.js & Express.js)</li>
+                <li class="list-group-item">Design (CSS3 / Photoshop/ Illustrator)</li>
+                <li class="list-group-item">Functionality (jQuery / JavaScript)</li>
+                <li class="list-group-item">Data Management (MySQL / MongoDB)</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<!--Common footer-->
+<%- include partials/footer.ejs %>
