@@ -36,7 +36,7 @@ app.post('/send', function(req, res, next) {
     service: 'Gmail',
     auth: {
       user: 'lshlsh9907@gmail.com',
-      pass: 'roqbd0918**'
+      pass: ''
     }
   });
   var mailOptions = {
